@@ -21,14 +21,14 @@ body section h1 {
 section {
     width: 100%;
     height: 100vh;
-    background: gray;
+    /* background: gray; */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .container {
-    background: blue;
+    /* background: blue; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -39,17 +39,33 @@ section {
 .container>div {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     height: 30%;
 }
 
 .container>div div {
-    background: #000;
+    /* background: #000; */
     width: 30%;
     height: 80%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-img {
-    width: 100px;
+.container>div div img {
+    width: auto%;
+    height: 100%;
+    border: 1px solid white;
+}
+
+.container>div div span {
+    position: absolute;
+    color: white;
+    font-size: 25px;
+}
+
+.container>div div img:hover {
+    cursor: pointer;
 }
